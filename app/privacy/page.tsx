@@ -9,25 +9,55 @@ export default function PrivacyPage() {
     <article className="page">
       <h1>Privacy</h1>
       <p>
-        Location stays on this phone and is only used to put you on the map while
-        the app is open. We do not have an account system, and we do not upload
-        your rides.
+        GPX Tracker is for motorcycle enthusiasts riding the Trans Euro Trail
+        or following GPX trails of their own. There are no accounts, no cloud
+        for your rides, and no ads or tracking in the app.
       </p>
+
+      <h2>Location</h2>
       <p>
-        Country GPX files download from the official Trans Euro Trail website to
-        this device. This app does not re-host those files.
+        If you allow location, the app uses it while it is open to put you on
+        the map and show speed. Nothing is recorded as a trip and nothing is
+        uploaded — you can refuse permission and still download tracks, import
+        a GPX, and use the rest of the app, or change it later in iOS
+        Settings.
       </p>
+
+      <h2>What stays on the phone</h2>
       <p>
-        The live map is Apple Maps. Apple does not let third-party apps store
-        those tiles, so an offline download saves a corridor of OpenStreetMap /
-        OpenTopoMap tiles along the section you choose. This app does not use
-        Mapbox.
+        Official Trans Euro Trail country files come straight from{" "}
+        <a href="https://transeurotrail.org/">transeurotrail.org</a> onto the
+        phone; the app does not re-host them. Anything you import stays on the
+        device as well, and an offline map download saves OpenStreetMap /
+        OpenTopoMap tiles along the section you pick. Delete the download, or
+        the app, and that data is gone.
       </p>
+
+      <h2>Maps and weather</h2>
       <p>
-        If you buy a coffee, Apple processes the payment. We only learn that the
-        tip succeeded — not your card details.
+        The live map is Apple Maps, so Apple is the one serving those tiles.
+        If you ask for a road to a point on the trail, Apple gets the start
+        and end so it can draw the route. Weather on a track comes from
+        Open-Meteo, using a point at the start of that track rather than a
+        live feed of where you are.
       </p>
-      <p>There is no analytics SDK and no advertising.</p>
+
+      <h2>Tips</h2>
+      <p>
+        The coffee tip is an App Store purchase, so Apple takes the payment
+        and card details stay with Apple.
+      </p>
+
+      <h2>This site and email</h2>
+      <p>
+        This site is only these pages, though the host may keep ordinary
+        server logs.         If you write to{" "}
+        <a href="mailto:contact@johanneseret.com">contact@johanneseret.com</a>,
+        the message is only used to reply, and the thread will be deleted if
+        you ask.
+      </p>
+
+      <p className="note">Johannes Eret · 9 September 2026</p>
     </article>
   );
 }

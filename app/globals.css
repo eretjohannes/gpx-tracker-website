@@ -62,7 +62,18 @@ a {
   margin: 0 0 1.5rem;
 }
 
+.page h2 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 1.75rem 0 0.6rem;
+}
+
 .page p {
   line-height: 1.55;
   margin: 0 0 1rem;
+}
+
+.page .note {
+  color: #5c5c5c;
+  font-size: 0.92rem;
 }
