@@ -16,4 +16,4 @@ Opens a local server on port 4177.
 
 ## Publish
 
-Push `main` and deploy the repo on [Vercel](https://vercel.com) as a static site (Framework: Other). After the live URL is known, add it to the canonical and Open Graph tags, then add a `sitemap.xml`.
+`vercel.json` sets Framework to Other and serves the repo root. Push `main` to deploy. After the live URL is known, add it to the canonical and Open Graph tags, then add a `sitemap.xml`.

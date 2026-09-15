@@ -2,7 +2,6 @@
   "name": "gpx-tracker-website",
   "private": true,
   "scripts": {
-    "dev": "npx --yes serve . -l 4177",
-    "build": "exit 0"
+    "dev": "npx --yes serve . -l 4177"
   }
 }
