@@ -1,0 +1,171 @@
+.gpx-hero-bench {
+  --gpx-hero-overlap: var(--px8-space-xl);
+  background: var(--px8-color-bg);
+}
+
+.gpx-hero-bench-scene {
+  position: relative;
+  height: 220vh;
+}
+
+.gpx-hero-bench-stage {
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--px8-color-bg);
+}
+
+.gpx-hero-bench-intro {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(var(--px8-space-md) + var(--px8-nav-bar) + var(--px8-space-lg) + var(--px8-space-md)) var(--px8-space-pad) calc(var(--gpx-hero-overlap) * 2);
+  text-align: center;
+}
+
+.gpx-hero-bench-title {
+  font-size: clamp(2.35rem, 5.6vw, 4.4rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.04;
+}
+
+.gpx-hero-bench-line {
+  display: block;
+}
+
+.gpx-hero-bench-lede {
+  max-width: 36ch;
+  margin-top: var(--px8-space-md);
+  color: var(--px8-color-muted);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+  line-height: 1.45;
+}
+
+.gpx-hero-bench-rig {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  will-change: transform;
+}
+
+.gpx-hero-bench-plate {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(44% var(--px8-space-pad) var(--px8-space-pad) var(--px8-space-pad) round calc(var(--px8-radius) * 2));
+  will-change: clip-path;
+}
+
+.gpx-hero-bench-floor {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center 58%;
+  transform-origin: center center;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.gpx-hero-bench-device-slot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: min(280px, 44vw);
+  margin-inline: auto;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.gpx-hero-bench-device {
+  margin: 0;
+}
+
+.gpx-hero-bench-bezel {
+  --gpx-reel-ratio: 616 / 1280;
+  position: relative;
+  overflow: hidden;
+  padding: 7px;
+  border-radius: 38px;
+  background: var(--px8-color-bezel);
+  box-shadow:
+    0 22px 50px color-mix(in srgb, var(--px8-color-fg) 28%, transparent),
+    inset 0 1px 0 color-mix(in srgb, var(--px8-color-bg) 14%, transparent);
+}
+
+.gpx-hero-bench-screen {
+  width: 100%;
+  height: auto;
+  aspect-ratio: var(--gpx-reel-ratio);
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.gpx-hero-bench-reel {
+  position: absolute;
+  inset: 7px;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  border-radius: 32px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gpx-hero-bench-bezel.is-reel .gpx-hero-bench-screen {
+  opacity: 0;
+}
+
+.gpx-hero-bench-bezel.is-reel .gpx-hero-bench-reel {
+  opacity: 1;
+}
+
+@media (max-width: 899px) {
+  .gpx-hero-bench {
+    --gpx-hero-overlap: var(--px8-space-lg);
+  }
+
+  .gpx-hero-bench-scene {
+    height: 200vh;
+  }
+
+  .gpx-hero-bench-intro {
+    padding-top: calc(var(--px8-space-md) + var(--px8-nav-bar) + var(--px8-space-lg));
+  }
+
+  .gpx-hero-bench-title {
+    font-size: clamp(2.1rem, 10vw, 2.7rem);
+  }
+
+  .gpx-hero-bench-plate {
+    clip-path: inset(40% var(--px8-space-pad) var(--px8-space-pad) var(--px8-space-pad) round calc(var(--px8-radius) * 1.75));
+  }
+
+  .gpx-hero-bench-device-slot {
+    width: min(224px, 58vw);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gpx-hero-bench-scene {
+    height: auto;
+  }
+
+  .gpx-hero-bench-stage {
+    position: relative;
+    height: 100dvh;
+  }
+
+  .gpx-hero-bench-plate,
+  .gpx-hero-bench-floor,
+  .gpx-hero-bench-device-slot,
+  .gpx-hero-bench-rig {
+    will-change: auto;
+  }
+}

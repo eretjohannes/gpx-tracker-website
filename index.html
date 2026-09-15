@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GPX Tracker</title>
+  <meta name="description" content="Offline motorcycle GPX navigation for the Trans Euro Trail. Download TET tracks, upload your own GPX, and keep maps on the phone. Free, no account." />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/features.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="icon" href="brand/logo.png" />
+  <link rel="apple-touch-icon" href="brand/logo.png" />
+</head>
+<body id="top">
+  <nav class="gpx-nav-split" data-block="gpx-nav-split">
+    <div class="gpx-nav-split-bar" data-bar>
+      <a class="gpx-nav-split-brand" data-brand href="#top" aria-label="GPX Tracker home">
+        <img class="gpx-nav-split-mark" src="brand/logo.png" alt="" width="58" height="27" />
+      </a>
+      <a class="gpx-nav-split-get" data-get href="#">Get the app</a>
+    </div>
+  </nav>
+
+  <section class="gpx-hero-bench" data-block="gpx-hero-bench">
+    <div class="gpx-hero-bench-scene" data-scene>
+      <div class="gpx-hero-bench-stage" data-stage>
+        <div class="gpx-hero-bench-intro" data-intro>
+          <h1 class="gpx-hero-bench-title" data-reveal>
+            <span class="gpx-hero-bench-line">Ride the trail</span>
+            <span class="gpx-hero-bench-line">without a signal.</span>
+          </h1>
+          <p class="gpx-hero-bench-lede" data-reveal>Motorcycle navigation for the Trans Euro Trail, or a GPX of your own. The map lives on the phone.</p>
+        </div>
+        <div class="gpx-hero-bench-rig" data-rig>
+          <div class="gpx-hero-bench-plate" data-plate>
+            <img class="gpx-hero-bench-floor" src="brand/trail.jpg" alt="" width="1024" height="576" data-floor />
+          </div>
+          <div class="gpx-hero-bench-device-slot" data-slot>
+            <figure class="gpx-hero-bench-device" data-device>
+              <div class="gpx-hero-bench-bezel" data-bezel>
+                <img
+                  class="gpx-hero-bench-screen"
+                  src="brand/screen-navigate.jpg"
+                  alt="GPX Tracker following a trail across Finland"
+                  width="473"
+                  height="1024"
+                />
+                <video class="gpx-hero-bench-reel" data-reel muted loop playsinline preload="metadata" poster="brand/screen-navigate.jpg">
+                  <source src="brand/demo.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gpx-features" aria-labelledby="gpx-features-title" data-block="gpx-features">
+    <div class="px8-container gpx-features-inner">
+      <h2 class="gpx-features-title" id="gpx-features-title" data-reveal>Offline GPX navigation for the Trans Euro Trail</h2>
+      <div class="gpx-features-grid">
+        <article class="gpx-features-item" data-reveal>
+          <div class="gpx-features-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 16.5c2.4-3.2 3.8-6.8 5.4-6.8 1.9 0 2.3 4.2 4.4 4.2s2.7-5.8 5.2-5.8c1.5 0 3.4 2.4 3.8 5.1" />
+              <path d="M4 20h16" />
+              <path d="M18.2 5.2a2.4 2.4 0 1 0 .2 3.4" />
+              <path d="M20.6 4.6v2.6h-2.6" />
+            </svg>
+          </div>
+          <h3 class="gpx-features-name">Download Trans Euro Trail tracks</h3>
+          <p class="gpx-features-text">Official country files on the phone. Download them and keep them up to date.</p>
+        </article>
+        <article class="gpx-features-item" data-reveal>
+          <div class="gpx-features-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 3.5h6.2L18 8.3V20.5H7z" />
+              <path d="M13.2 3.5V8.3H18" />
+              <path d="M12 16.6v-5.4" />
+              <path d="M9.8 13.4 12 11.2l2.2 2.2" />
+            </svg>
+          </div>
+          <h3 class="gpx-features-name">Upload your own GPX</h3>
+          <p class="gpx-features-text">Import a GPX file and navigate it on the phone.</p>
+        </article>
+        <article class="gpx-features-item" data-reveal>
+          <div class="gpx-features-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="5" width="16" height="14" rx="2" />
+              <path d="M4 10h16" />
+              <path d="M10 5v14" />
+              <path d="M15.2 16.4v-3.6" />
+              <path d="M13.4 14.6 15.2 12.8l1.8 1.8" />
+            </svg>
+          </div>
+          <h3 class="gpx-features-name">Download offline maps</h3>
+          <p class="gpx-features-text">Save the tiles to the device. They stay there when the signal drops.</p>
+        </article>
+        <article class="gpx-features-item gpx-features-item-ink" data-reveal>
+          <div class="gpx-features-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6.5" y="11" width="11" height="8.5" rx="1.6" />
+              <path d="M8.8 11V8.1a3.2 3.2 0 0 1 6.4-.2" />
+            </svg>
+          </div>
+          <h3 class="gpx-features-name">Free. No account needed.</h3>
+          <p class="gpx-features-text">One hundred percent free. Nothing to sign in to. The files live on this phone.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="gpx-footer-legal" data-block="gpx-footer-legal">
+    <div class="px8-container gpx-footer-legal-inner">
+      <nav class="gpx-footer-legal-links" aria-label="Legal">
+        <a class="gpx-footer-legal-item" href="privacy/">Privacy</a>
+        <a class="gpx-footer-legal-item" href="support/">Support</a>
+      </nav>
+      <p class="gpx-footer-legal-copy">© 2026 GPX Tracker</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/features.js"></script>
+</body>
+</html>
