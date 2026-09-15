@@ -149,6 +149,5 @@
     "settle"
   );
 
-  camera.addLabel("hold", 1);
-  camera.to({}, { duration: 1.2 });
+
 })();

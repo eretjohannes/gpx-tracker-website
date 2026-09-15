@@ -5,7 +5,7 @@
 
 .gpx-hero-bench-scene {
   position: relative;
-  height: 220vh;
+  height: 140vh;
 }
 
 .gpx-hero-bench-stage {
@@ -142,7 +142,7 @@
   }
 
   .gpx-hero-bench-scene {
-    height: 200vh;
+    height: 120vh;
   }
 
   .gpx-hero-bench-intro {
@@ -179,3 +179,17 @@
     will-change: auto;
   }
 }
+
+.gpx-download { display: inline-flex; align-items: center; justify-content: center; gap: 28px; min-height: 52px; padding: 14px 24px; border-radius: 999px; background: var(--px8-color-accent-ink); color: var(--px8-color-accent); font-weight: 500; }
+.gpx-download:hover { background: #37412f; }
+.gpx-hero-bench-intro .gpx-download { margin-top: 24px; }
+.gpx-hero-proof { margin-top: 12px; color: var(--px8-color-muted); font-size: .8rem; }
+.gpx-hero-bench-intro { padding-bottom: 64px; }
+.gpx-hero-bench-device-slot { width: min(240px, 40vw); }
+@media (max-width: 699px) {
+  .gpx-hero-bench-stage { height: max(850px, 100dvh); }
+  .gpx-hero-bench-scene { height: max(960px, 120vh); }
+  .gpx-hero-bench-device-slot { width: 190px; }
+  .gpx-hero-bench-intro { padding-bottom: 48px; }
+}
+@media (prefers-reduced-motion: reduce) { .gpx-hero-bench-scene { height: auto; } }
