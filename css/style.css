@@ -1,3 +1,27 @@
+@font-face {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/archivo-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/archivo-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/archivo-600.woff2") format("woff2");
+}
+
 :root {
   --px8-color-bg: #f3f2ee;
   --px8-color-surface: #ffffff;

@@ -1,0 +1,58 @@
+.gpx-about {
+  background: var(--px8-color-bg);
+  color: var(--px8-color-fg);
+}
+
+.gpx-about-inner {
+  max-width: 42rem;
+  padding-bottom: calc(var(--px8-space-xl) + var(--px8-space-lg));
+}
+
+.gpx-about-title {
+  max-width: 18ch;
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.06;
+}
+
+.gpx-about-lede {
+  max-width: 62ch;
+  margin-top: var(--px8-space-md);
+  color: var(--px8-color-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.gpx-about-list {
+  display: grid;
+  gap: var(--px8-space-lg);
+  margin-top: var(--px8-space-lg);
+}
+
+.gpx-about-list dt {
+  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.gpx-about-list dd {
+  max-width: 62ch;
+  margin-top: var(--px8-space-sm);
+  color: var(--px8-color-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.gpx-about-list a {
+  color: var(--px8-color-fg);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 699px) {
+  .gpx-about-inner {
+    padding-bottom: var(--px8-space-xl);
+  }
+}

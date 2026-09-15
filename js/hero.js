@@ -30,11 +30,38 @@
       }
     };
 
+    const attach = () => {
+      const src = reel.getAttribute("data-src");
+      if (!src || reel.dataset.bound === "1") return;
+      reel.dataset.bound = "1";
+      const source = document.createElement("source");
+      source.src = src;
+      source.type = "video/mp4";
+      reel.appendChild(source);
+      reel.load();
+    };
+
     reel.addEventListener("loadedmetadata", fitReel);
     reel.addEventListener("loadeddata", ready);
     reel.addEventListener("error", () => {
       if (bezel) bezel.classList.remove("is-reel");
     });
+
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            attach();
+            io.disconnect();
+          }
+        },
+        { rootMargin: "200px" }
+      );
+      io.observe(reel);
+    } else {
+      attach();
+    }
+
     fitReel();
     ready();
   }

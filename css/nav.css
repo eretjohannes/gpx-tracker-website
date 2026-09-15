@@ -34,6 +34,10 @@
   border: 1px solid color-mix(in srgb, var(--px8-color-accent) 12%, transparent);
 }
 
+.gpx-nav-split-brand picture {
+  display: contents;
+}
+
 .gpx-nav-split-mark {
   width: 58px;
   height: 27px;

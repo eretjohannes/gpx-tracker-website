@@ -1,0 +1,21 @@
+{
+  "name": "GPX Tracker",
+  "short_name": "GPX Tracker",
+  "description": "Free iPhone app for Trans Euro Trail navigation and motorcycle GPX files.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f3f2ee",
+  "theme_color": "#f3f2ee",
+  "icons": [
+    {
+      "src": "/brand/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/brand/logo.png",
+      "sizes": "825x386",
+      "type": "image/png"
+    }
+  ]
+}
